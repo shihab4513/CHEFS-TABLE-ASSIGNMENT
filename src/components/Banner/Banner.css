@@ -1,0 +1,18 @@
+.btn-explore{
+    display: inline-flex;
+padding: 20px 30px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 50px;
+background: #0BE58A;
+}
+.btn-feedback{
+    display: inline-flex;
+padding: 20px 30px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 50px;
+border: 1px solid #FFF;
+}
