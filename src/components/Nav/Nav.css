@@ -1,0 +1,6 @@
+.seventy-white{
+    color: rgba(21, 11, 43, 0.70);
+    
+    
+}
+.custom-placeholder::placeholder { @apply seventy-white text-[1rem] font-normal; }
