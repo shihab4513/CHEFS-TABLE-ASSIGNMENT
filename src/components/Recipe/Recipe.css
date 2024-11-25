@@ -1,0 +1,34 @@
+.img-size{
+    height: 200px;
+    width: 330px;
+align-self: stretch;
+border-radius: 16px;
+
+}
+.card-design{
+    display: flex;
+width: 23rem;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+border-radius: 16px;
+border: 1px solid rgba(40, 40, 40, 0.20);
+}
+.hr-design{
+    width: 20rem;
+height: 1px;
+background: rgba(40, 40, 40, 0.10);
+}
+.var8-black{
+    color: rgba(40, 40, 40, 0.80);
+}
+.btn-cook{
+    display: flex;
+padding: 13px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 50px;
+background: var(--Spring-Green-500, #0BE58A);
+}
