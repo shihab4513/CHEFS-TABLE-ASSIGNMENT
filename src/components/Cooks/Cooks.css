@@ -1,0 +1,14 @@
+.c-hr{
+    width: 350px;
+height: 1px;
+background: rgba(40, 40, 40, 0.15);
+}
+.btn-prepare{
+    border-radius: 50px;
+background: #0BE58A;
+display: flex;
+padding: 9px 18px;
+justify-content: center;
+align-items: center;
+/* gap: 10px; */
+}

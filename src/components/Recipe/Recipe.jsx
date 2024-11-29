@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Recipe/Recipe.css'
 
-const Recipe = ({recipe}) => {
+const Recipe = ({recipe,handleBookMark}) => {
     const {recipe_id,recipe_image,recipe_name,short_description,ingredients,preparing_time,calories}=recipe;
   return (
     <div className='card-design'>
@@ -22,7 +22,7 @@ const Recipe = ({recipe}) => {
           </div>
           
         </div>
-        <button className='btn-cook mt-6'><span className='text-[1.125rem] font-medium text-[#150B2B]'>Want to Cook</span></button>
+        <button onClick={()=>{handleBookMark(recipe)}} className='btn-cook mt-6 text-[1.125rem] font-medium text-[#150B2B]'>Want to Cook</button>
 
     </div>
   )

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Recipe from '../Recipe/Recipe';
 import '../Recipes/Recipes.css'
 
-const Recipes = () => {
+const Recipes = ({handleBookMark}) => {
 const [recipes,setRecipes]=useState([]);
 useEffect(()=>{
     fetch('recipes.json')
@@ -15,8 +15,8 @@ useEffect(()=>{
         
   
         {
-        //  blogs.map(blog=><Blog handleBookMark={handleBookMark} handleMarkAsRead={handleMarkAsRead} key={blog.id} blog={blog}></Blog>)
-        recipes.map(recipe=><Recipe key={recipe.recipe_id} recipe={recipe}></Recipe>)
+        
+        recipes.map(recipe=><Recipe key={recipe.recipe_id} recipe={recipe} handleBookMark={handleBookMark}></Recipe>)
         // 
         
         
