@@ -24,7 +24,7 @@ const Cooks = ({bookmarks,currentlyCooking,remaining,totalTime,totalCalories}) =
     <tbody>
       {
        
-        bookmarks.map((bookmark,index)=><Cook currentlyCooking={currentlyCooking} bookmark={bookmark} index={index}></Cook>)
+        bookmarks.map((bookmark,index)=><Cook currentlyCooking={currentlyCooking} key={bookmark.recipe_id} bookmark={bookmark} index={index}></Cook>)
       }
       
      
@@ -48,7 +48,7 @@ const Cooks = ({bookmarks,currentlyCooking,remaining,totalTime,totalCalories}) =
     <tbody>
       
       {
-        remaining.map((remaining,index)=><Remain remaining={remaining} index={index}></Remain>)
+        remaining.map((remaining,index)=><Remain key={remaining.recipe_id} remaining={remaining} index={index}></Remain>)
       }
       <tr>
       <th></th>
