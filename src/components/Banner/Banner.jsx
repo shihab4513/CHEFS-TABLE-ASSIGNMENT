@@ -18,7 +18,7 @@ const Banner = () => {
         </div>
         <div className='text-center mt-24'>
           <h1 className='text-[#150B2B] text-[2.5rem] font-semibold'>Our Recipes</h1>
-          <p className='text-[1rem] font-normal sixty-white'>Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus.Eget <br />urna volutpat curabitur elementum mauris aenean neque. </p>
+          <p className='text-[1rem] font-normal sixty-white'>Welcome to Chef’s Table, where culinary artistry meets exceptional service. Discover exclusive recipes, meet our master chefs, and join our community of food enthusiasts. <br />Experience the joy of cooking! 🌟 </p>
         </div>
     </div>
   )

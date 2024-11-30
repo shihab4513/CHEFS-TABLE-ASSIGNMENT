@@ -14,15 +14,15 @@ const Recipe = ({recipe,handleBookMark}) => {
         <hr className='hr-design' />
         <div className='flex justify-between fira-font text-[1rem] font-normal var8-black gap-4'>
           <div className='flex justify-between gap-2'>
-          <img src="clock.png" alt="" srcset="" /><p>{preparing_time}</p>
+          <img src="clock.png" alt="" srcset="" /><p>{preparing_time} minutes</p>
           </div>
           <div className='flex justify-between gap-2'>
             <img src="calorie.png" alt="" srcset="" />
-            <p>{calories}</p>
+            <p>{calories} calories</p>
           </div>
           
         </div>
-        <button onClick={()=>{handleBookMark(recipe)}} className='btn-cook mt-6 text-[1.125rem] font-medium text-[#150B2B]'>Want to Cook</button>
+        <button onClick={()=>{handleBookMark(recipe)}} className='btn-cook mt-6 text-[1.125rem] font-medium text-[#150B2B] hover:bg-slate-400'>Want to Cook</button>
 
     </div>
   )
