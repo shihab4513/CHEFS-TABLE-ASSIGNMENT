@@ -2,6 +2,7 @@ import React from 'react'
 import '../Cooks/Cooks.css'
 import Cook from '../Cook/Cook'
 import Remain from '../Remain/Remain'
+import PropTypes from 'prop-types';
 
 const Cooks = ({bookmarks,currentlyCooking,remaining,totalTime,totalCalories}) => {
   return (
@@ -66,4 +67,9 @@ const Cooks = ({bookmarks,currentlyCooking,remaining,totalTime,totalCalories}) =
   )
 }
 
+Cooks.propTypes={
+  bookmarks: PropTypes.object.isRequired,
+  currentlyCooking:PropTypes.func
+  
+}
 export default Cooks

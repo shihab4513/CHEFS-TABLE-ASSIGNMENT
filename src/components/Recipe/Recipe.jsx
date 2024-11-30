@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Recipe/Recipe.css'
+import PropTypes from 'prop-types';
 
 const Recipe = ({recipe,handleBookMark}) => {
     const {recipe_id,recipe_image,recipe_name,short_description,ingredients,preparing_time,calories}=recipe;
@@ -26,6 +27,12 @@ const Recipe = ({recipe,handleBookMark}) => {
 
     </div>
   )
+}
+
+Recipe.propTypes={
+  recipe: PropTypes.object.isRequired,
+  handleBookMark:PropTypes.func
+  
 }
 
 export default Recipe

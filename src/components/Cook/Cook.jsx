@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const Cook = ({bookmark,index,currentlyCooking}) => {
   return (
@@ -14,4 +15,8 @@ const Cook = ({bookmark,index,currentlyCooking}) => {
   )
 }
 
+Cook.propTypes={
+  currentlyCooking:PropTypes.func,
+  bookmark: PropTypes.object.isRequired,
+}
 export default Cook

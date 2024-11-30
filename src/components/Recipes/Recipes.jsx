@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Recipe from '../Recipe/Recipe';
 import '../Recipes/Recipes.css'
+import PropTypes from 'prop-types';
 
 const Recipes = ({handleBookMark}) => {
 const [recipes,setRecipes]=useState([]);
@@ -24,5 +25,11 @@ useEffect(()=>{
       </div>
   )
 }
+
+Recipes.propTypes={
+    
+    handleBookMark:PropTypes.func
+    
+  }
 
 export default Recipes
